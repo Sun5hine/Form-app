@@ -6,6 +6,7 @@ class Me extends React.Component {
     return (
       <div>
   <h1> Hey You </h1>
+  <h2> Testing the git </h2>
       </div>
     );
   }
