@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Form from "./Form.js"
-import Me from "./Me.js"
+import Timer from "./Timer.js"
 
 class App extends Component {
   render() {
@@ -9,7 +9,7 @@ class App extends Component {
       <div className="App">
       <Me />
       <Form />
-      <h1> let's get cracking </h1>
+      <Timer />
 
 
       </div>
