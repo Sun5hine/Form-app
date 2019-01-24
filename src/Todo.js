@@ -12,6 +12,8 @@ class Todo extends React.Component {
       <h3> TODO </h3>
       <TodoList items = {this.state.items} />
       <form onSubmit = {this.handleSubmit}>
+      <label htmlFor="new-todo">
+      What you want to do?
       </div>
     );
   }
