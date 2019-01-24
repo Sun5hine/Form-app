@@ -1,15 +1,15 @@
 import React from 'react';
 
 
-export default class Todo extends React.component {
+class Todo extends React.Component {
   render(){
     return(
 
-    <div>
-     sooooooo
-    </div>
-
-    )
+      <div>
+      Testing
+      </div>
+    );
   }
-
 }
+
+export default Todo;

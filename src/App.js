@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Form from './Form.js';
 import Timer from './Timer.js';
-// import Todo from './Todo.js'
+import Todo from './Todo.js'
 
 
 class App extends Component {
@@ -10,8 +10,7 @@ class App extends Component {
     return (
       <div className="App">
 
-      <Form />
-      <Timer />
+
       <Todo />
 
 
