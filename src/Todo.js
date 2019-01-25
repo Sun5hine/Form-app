@@ -5,6 +5,8 @@ class Todo extends React.Component {
   constructor(props) {
     super(props);
     this.state = {items: [], text: ''};
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
   render(){
     return(
@@ -15,9 +17,11 @@ class Todo extends React.Component {
       <label htmlFor="new-todo">
       What you want to do?
       </label>
-      <input id="new-todo"
+      <input
+      id="new-todo"
       onChange = {this.handleChange}
-      value = {this.state.text} />
+      value = {this.state.text}
+      />
       <button> Add #{this.state.items.length + 1 }</button>
       </form>
       </div>
@@ -25,8 +29,8 @@ class Todo extends React.Component {
   }
 
   handleChange(e) {
-    this.setState({ text: e.target.value });
-  }
+   this.setState({ text: e.target.value });
+ }
 
   handleSubmit(e) {
     e.preventDefault();
@@ -44,15 +48,16 @@ class Todo extends React.Component {
   }
 }
 
-  class TodoList extends React.Component {
-    render(){
-      return(
-        <ul>
-        {this.props.items.map(item => (
-          <li> key={item.id>}
-        ))}
-      )
-    }
+class TodoList extends React.Component {
+render() {
+  return (
+    <ul>
+      {this.props.items.map(item => (
+        <li key={item.id}>{item.text}</li>
+      ))}
+    </ul>
+  );
+}
+}
 
-  }
 export default Todo;
