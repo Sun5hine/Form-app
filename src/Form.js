@@ -7,7 +7,7 @@ class Form extends React.Component {
     this.state = {
       value: ''
     };
-  this.handleChange = this.handleChange.bind(this);
+    // this.handleChange = this.handleChange.bind(this);
    this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleChange(event) {
@@ -25,7 +25,7 @@ class Form extends React.Component {
       <form >
      <label>
        Name:
-       <input type="text" value={this.state.value} onChange={this.handleChange}/>
+       <input type="text" value={this.state.value} onChange={this.handleChange.bind(this)}/>
      </label>
     <input type="submit" value="Submit" />
    </form>
