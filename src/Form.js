@@ -15,7 +15,7 @@ class Form extends React.Component {
   }
 
   handleSubmit(event) {
-    alert('Do I need this?: ' + this.state.value);
+    alert('what should I add here?: ' + this.state.value);
     event.preventDefault();
   }
 
