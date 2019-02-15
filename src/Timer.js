@@ -9,7 +9,7 @@ class Timer extends React.Component {
 
 tick(){
   this.setState(state => ({
-    seconds: state.seconds + 8
+    seconds: state.seconds + 1
   }));
 }
  componentDidMount(){
