@@ -26,7 +26,7 @@ class Todo extends React.Component {
   }
 
   handleChange(e){
-     this.setState({ text:  });
+     this.setState({ text: e.target.value });
    }
 
   handleSubmit(e) {
