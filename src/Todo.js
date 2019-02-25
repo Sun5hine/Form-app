@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-class Todo extends React.Component {
+class Todo extends 
   constructor(props) {
     super(props);
     this.state = {items: [], text: ''};
