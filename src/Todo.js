@@ -11,7 +11,8 @@ class Todo extends React.Component {
   render(){
     return(
       <div>
-      <h3> TODO  </h3>
+      <h3> TODO </h3>
+      <h2> .... </h2>
 
       <form onSubmit = {this.handleSubmit.bind(this)}>
       <input
