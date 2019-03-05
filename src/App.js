@@ -12,7 +12,7 @@ class App extends Component {
     
 
      <h1> some changes </h1>
-      <h2> why </h2>
+     
       <Todo />
 
 
